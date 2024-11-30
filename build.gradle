@@ -1,0 +1,20 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+// In the project-level build.gradle, make sure you have the classpath for Google services:
+buildscript {
+    repositories {
+        google() // Required for Firebase
+        mavenCentral()
+    }
+    dependencies {
+        classpath libs.google.services // Latest version
+        classpath libs.dotenv.kotlin // Add this line
+    }
+}
+
+plugins {
+    alias(libs.plugins.android.application) apply false
+    alias(libs.plugins.kotlin.android) apply false
+    alias(libs.plugins.kotlin.compose) apply false
+
+
+}
