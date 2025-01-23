@@ -108,7 +108,7 @@ class MainActivity : ComponentActivity() {
         val firebaseService = MyFirebaseMessagingService()
 
         firebaseService.generatePayload { payload ->
-            val url = BuildConfig.API_URL
+            val url = BuildConfig.DEVICE_REGISTER_URL
             LogHelper.logMessage("API", "URL: $url")
 
             ApiRequestHelper.sendApiRequest(

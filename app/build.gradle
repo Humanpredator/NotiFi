@@ -23,11 +23,11 @@ android {
             release {
                 minifyEnabled false
                 proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-                buildConfigField "String", "API_URL", "\"${project.findProperty('API_URL')}\""
+                buildConfigField "String", "DEVICE_REGISTER_URL", "\"${project.findProperty('DEVICE_REGISTER_URL')}\""
             }
 
             debug {
-                buildConfigField "String", "API_URL", "\"${project.findProperty('API_URL')}\""
+                buildConfigField "String", "DEVICE_REGISTER_URL", "\"${project.findProperty('DEVICE_REGISTER_URL')}\""
             }
         }
     }
